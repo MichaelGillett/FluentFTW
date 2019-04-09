@@ -8,12 +8,12 @@ Fluent FTW currently consists of a CSS stylesheet and some snippets of vanilla J
 ### CSS
 Add the below snippet to the `<head>` of your site to add the Fluent FTW CSS to your site
 
-*Link coming soon*
+`https://raw.githubusercontent.com/MichaelGillett/FluentFTW/master/dist/css/fluent.css`
 
 ### JavScript
 Add the below snippet to the bottom of the `<body>` of your site to add the Fluent FTW JS to your site
 
-*Link coming soon*
+`https://raw.githubusercontent.com/MichaelGillett/FluentFTW/master/dist/js/fluent.js`
 
 ## Current Features
 
