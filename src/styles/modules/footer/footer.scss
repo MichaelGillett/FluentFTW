@@ -1,0 +1,13 @@
+.footerContainer {
+    background: #222;
+    box-shadow: inset -10px 20px 10px -20px rgba(0,0,0,.7);
+    text-align: center;
+    width: 100%;
+
+    .footer {
+        color: #aaa;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 30px;
+    }
+}

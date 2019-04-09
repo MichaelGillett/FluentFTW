@@ -1,2 +1,2 @@
 # FluentFTW
-A community project to bring Microsoft's Fluent Design System to the web
+An open source project to bring Microsoft's Fluent Design System to the web

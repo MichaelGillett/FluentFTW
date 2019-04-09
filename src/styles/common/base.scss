@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: $color-background-dark;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+
+    &.light {
+        background-color: $color-background-dark;
+        color: #000;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: {
+        weight: 600;
+    }
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $color-font-base-dark;
+    text-decoration: none;
+
+    &:active, &:focus, &:hover, &:visited {
+        color: $color-font-base-dark;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

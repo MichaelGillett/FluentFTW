@@ -1,0 +1,44 @@
+.header {
+    box-sizing: border-box; 
+    height: 50px;
+    left: 0;
+    line-height: 38px;
+    padding: 4px 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+    .logo {
+        display: inline;
+
+        h1 {
+            display: inline;
+    
+            font: {
+                size: 1.5em;
+            }
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    ul.navigation {
+        display: inline;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+
+    .active {
+        a {
+            color: $color-font-primary;
+
+            &:active, &:focus, &:hover, &:visited {
+                color: $color-font-primary;
+            }
+        }
+    }
+}

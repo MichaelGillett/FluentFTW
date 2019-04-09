@@ -1,0 +1,67 @@
+.section {
+    overflow: auto;
+    padding: {
+        bottom: 70px;
+        left: 40px;
+        right: 40px;
+        top: 70px;
+    }
+
+    .heading {
+        border-top: 5px solid $color-primary;
+        margin: {
+            left: 50px;
+            top: 20px;
+        }
+        max-width: 35%;
+        padding: {
+            right: 40px;
+            top: 30px;
+        }
+        vertical-align: top;
+
+        h1, h2, h3, h4, h5, h6 {
+            color: $color-primary;
+        }
+    }
+
+    .content {
+        padding: {
+            left: 50px;
+            right: 50px;
+            top: 35px;
+        }
+        max-width: 60%;
+
+        a, p, li {
+            font: {
+                size: 21px;
+            }
+        }
+
+        a, a:active, a:focus, a:hover, a:visited {
+            color: $color-primary;
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    .demo-item {
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.topOfPageContent {
+    box-shadow: inset -10px -23px 10px -20px rgba(0,0,0,.7);
+    padding: {
+        top: 50px;
+    }
+}

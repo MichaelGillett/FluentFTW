@@ -1,0 +1,111 @@
+@import "variables.scss";
+
+.acrylic {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    background: $dark-acrylic-fallback;
+    background-image: url($acrylic-noise);
+    background-image: url($acrylic-noise), linear-gradient(to bottom, $dark-acrylic-noise 0%, $dark-acrylic-noise 100%);
+    bottom: 0;
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0);
+    width: 100%;
+    z-index: -1;
+
+    @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+        background-color: $dark-acrylic;
+        -webkit-backdrop-filter: blur(10px) saturate(125%);
+        backdrop-filter: blur(10px) saturate(125%);
+    }
+
+    .light &, &.light {
+      background: $light-acrylic-fallback;
+      background-image: url($acrylic-noise), linear-gradient(to bottom, $light-acrylic-noise 0%, $light-acrylic-noise 100%);
+
+      @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+          background-color: $light-acrylic;
+          -webkit-backdrop-filter: blur(10px) saturate(125%);
+          backdrop-filter: blur(10px) saturate(125%);
+      }
+
+      &.medium {
+        background: $light-acrylic-medium-fallback;
+
+        @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+            background-color: $light-acrylic-medium;
+        }
+      }
+  
+      &.thick {
+        background: $light-acrylic-thick-fallback;
+
+        @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+            background-color: $light-acrylic-thick;
+        }
+      }
+    }
+  }
+
+  &.medium {
+    &::before {
+      background: $dark-acrylic-medium-fallback;
+
+      @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+          background-color: $dark-acrylic-medium;
+      }
+    }
+  }
+
+  &.thick {
+    &::before {
+      background: $dark-acrylic-thick-fallback;
+
+      @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+          background-color: $dark-acrylic-thick;
+      }
+    }
+  }
+
+  &.light {
+    color: #333;
+
+    &::before {
+      background: $light-acrylic;
+      background-image: url($acrylic-noise), linear-gradient(to bottom, $light-acrylic-noise 0%, $light-acrylic-noise 100%);
+
+      @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+          background-color: $light-acrylic;
+          -webkit-backdrop-filter: blur(10px) saturate(125%);
+          backdrop-filter: blur(10px) saturate(125%);
+      }
+    }
+
+    &.medium {
+      &::before {
+        background: $light-acrylic-medium-fallback;
+
+        @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+            background-color: $light-acrylic-medium;
+        }
+      }
+    }
+
+    &.thick {
+      &::before {
+        background: $light-acrylic-thick-fallback;
+
+        @supports ((-webkit-backdrop-filter: blur(10px) saturate(125%)) or (backdrop-filter: blur(10px) saturate(125%))) {
+            background-color: $light-acrylic-thick;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// VARIABLES
+
+// COLORS
+// ---------------------------------
+
+$color-primary: rgb(80, 230, 255);
+    $color-primary_Light1: lighten($color-primary, 10%);
+    $color-primary_Light2: lighten($color-primary, 20%);
+    $color-primary_Light3: lighten($color-primary, 30%);
+    $color-primary_Dark1: darken($color-primary, 10%);
+    $color-primary_Dark2: darken($color-primary, 20%);
+    $color-primary_Dark3: darken($color-primary, 30%);
+
+$color-secondary: rgb(0, 120, 212);
+    $color-secondary_Light1: lighten($color-secondary, 10%);
+    $color-secondary_Light2: lighten($color-secondary, 20%);
+    $color-secondary_Light3: lighten($color-secondary, 30%);
+    $color-secondary_Dark1: darken($color-secondary, 10%);
+    $color-secondary_Dark2: darken($color-secondary, 20%);
+    $color-secondary_Dark3: darken($color-secondary, 30%);
+
+//Fonts
+$color-font-primary: $color-primary;
+    $color-font-primary_Light1: lighten($color-font-primary, 10%);
+    $color-font-primary_Light2: lighten($color-font-primary, 20%);
+    $color-font-primary_Light3: lighten($color-font-primary, 30%);
+    $color-font-primary_Dark1: darken($color-font-primary, 10%);
+    $color-font-primary_Dark2: darken($color-font-primary, 20%);
+    $color-font-primary_Dark3: darken($color-font-primary, 30%);
+
+$color-font-secondary: rgb(0, 120, 212);
+    $color-font-secondary_Light1: lighten($color-font-secondary, 10%);
+    $color-font-secondary_Light2: lighten($color-font-secondary, 20%);
+    $color-font-secondary_Light3: lighten($color-font-secondary, 30%);
+    $color-font-secondary_Dark1: darken($color-font-secondary, 10%);
+    $color-font-secondary_Dark2: darken($color-font-secondary, 20%);
+    $color-font-secondary_Dark3: darken($color-font-secondary, 30%);
+
+
+
+$color-font-base-dark: #fff;
+    $color-font-base-dark_Dark1: darken($color-font-base-dark, 10%);
+    $color-font-base-dark_Dark2: darken($color-font-base-dark, 20%);
+    $color-font-base-dark_Dark3: darken($color-font-base-dark, 30%);
+
+$color-font-base-light: #000;
+    $color-font-base-dark_Light1: lighten($color-font-base-light, 10%);
+    $color-font-base-dark_Light2: lighten($color-font-base-light, 20%);
+    $color-font-base-dark_Light3: lighten($color-font-base-light, 30%);
+
+// Backgrounds
+$color-background-dark: #333;
+$color-background-light: #eee;

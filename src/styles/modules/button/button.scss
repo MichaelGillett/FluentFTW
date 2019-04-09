@@ -1,0 +1,56 @@
+a.button {
+    background-color: $color-primary;
+    border-radius: 2px;
+    color: $color-font-secondary;
+    padding: 8px 15px;
+    transition: background-color .3s, box-shadow .4s, color .3s;
+
+    &:active, &:focus, &:visited {
+        color: $color-font-secondary;
+    }
+
+    &:hover {
+        background-color: $color-secondary;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        color: $color-font-primary;
+        text-decoration: none;
+    }
+
+    &.secondary {
+        background-color: transparent;
+        border-radius: 0;
+        color: $color-font-base-dark;
+        font: {
+            weight: 600;
+        }
+        padding: 0;
+
+        &:hover {
+            box-shadow: none;
+            text-decoration: underline;
+        }
+
+        .light {
+            color: $color-font-base-light;
+        }
+    }
+
+    &.square {
+        border-radius: 0;
+    }
+
+    &.reveal {
+        border: 3px solid transparent;
+        border-radius: 0;
+
+        &:hover {
+            background-color: $color-primary;
+            box-shadow: none;
+            color: $color-font-secondary;
+        }
+    }
+
+    + .secondary {
+        padding: 8px 15px;
+    }
+}
