@@ -1,4 +1,4 @@
-# FluentFTW
+# Fluent FTW
 An open source project to bring Microsoft's Fluent Design System to the web
 
 Fluent FTW currently consists of a CSS stylesheet and some snippets of vanilla JavaScript that can be added to any website. Over time the plan is to bring a more comprehensive selection of integrations such as building on top of Bootstrap and creating a WordPress Theme.
