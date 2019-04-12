@@ -2,6 +2,8 @@ a.button {
     background-color: $color-primary;
     border-radius: 2px;
     color: $color-font-secondary;
+    display: inline-block;
+    margin-right: 15px;
     padding: 8px 15px;
     transition: background-color .3s, box-shadow .4s, color .3s;
 
@@ -23,7 +25,7 @@ a.button {
         font: {
             weight: 600;
         }
-        padding: 0;
+        padding: 8px 0;
 
         &:hover {
             box-shadow: none;
@@ -48,9 +50,5 @@ a.button {
             box-shadow: none;
             color: $color-font-secondary;
         }
-    }
-
-    + .secondary {
-        padding: 8px 15px;
     }
 }

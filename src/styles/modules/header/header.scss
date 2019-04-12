@@ -25,6 +25,9 @@
 
     ul.navigation {
         display: inline;
+        padding: {
+            left: 10px;
+        };
 
         li {
             display: inline-block;

@@ -2,6 +2,12 @@
     background: {
         position: center 0px;
         repeat: no-repeat;
-        size: 140%;
+        size: auto 120%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        background: {
+            size: 140%;
+        }
     }
 }
