@@ -26,6 +26,9 @@ a {
   a:hover {
     text-decoration: underline; }
 
+code {
+  white-space: pre-wrap; }
+
 .acrylic {
   position: relative;
   z-index: 1; }
@@ -102,6 +105,8 @@ a.button {
   background-color: #50e6ff;
   border-radius: 2px;
   color: #0078d4;
+  display: inline-block;
+  margin-right: 15px;
   padding: 8px 15px;
   transition: background-color .3s, box-shadow .4s, color .3s; }
   a.button:active, a.button:focus, a.button:visited {
@@ -116,7 +121,7 @@ a.button {
     border-radius: 0;
     color: #fff;
     font-weight: 600;
-    padding: 0; }
+    padding: 8px 0; }
     a.button.secondary:hover {
       box-shadow: none;
       text-decoration: underline; }
@@ -131,8 +136,6 @@ a.button {
       background-color: #50e6ff;
       box-shadow: none;
       color: #0078d4; }
-  a.button + .secondary {
-    padding: 8px 15px; }
 
 .section {
   overflow: auto;
@@ -184,17 +187,17 @@ a.button {
     color: #cccccc; }
 
 .dropshadow {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
   .dropshadow.depth-1 {
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6); }
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
   .dropshadow.depth-2 {
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.7); }
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); }
   .dropshadow.depth-3 {
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.8); }
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.7); }
   .dropshadow.depth-4 {
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9); }
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8); }
   .dropshadow.depth-5 {
-    box-shadow: 0 0 120px black; }
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.9); }
 
 .footerContainer {
   background: #222;
@@ -225,7 +228,8 @@ a.button {
       margin: 0;
       padding: 0; }
   .header ul.navigation {
-    display: inline; }
+    display: inline;
+    padding-left: 10px; }
     .header ul.navigation li {
       display: inline-block;
       margin: 0 10px; }
@@ -237,4 +241,7 @@ a.button {
 .parallax {
   background-position: center 0px;
   background-repeat: no-repeat;
-  background-size: 140%; }
+  background-size: auto 120%; }
+  @media only screen and (min-width: 600px) {
+    .parallax {
+      background-size: 140%; } }
